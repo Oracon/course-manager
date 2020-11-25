@@ -24,7 +24,7 @@
       <td><img src="{{ course.imageUrl }}" width=30 height=30></td>
       <td>{{ course.name }}</td>
       <td>{{ course.price }}</td>
-      <td>{{ course.code | lowercase}}</td>
+      <td>{{ course.code | uppercase | replace: '-': ' ' }}</td>
       <td>{{ course.releaseDate | date: 'dd/MM/yyy'}}</td>
       <td>
         <app-star [rating]="course.rating"></app-star>

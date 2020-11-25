@@ -1,3 +1,8 @@
-<div class="container">
-  <app-course-list></app-course-list>
+<app-nav-bar></app-nav-bar>
+<div class="container mt-4">
+  <!--app-course-list deletado pois agora usaremos o trigger da rota de cursos-->
+  <!--<app-course-list></app-course-list>-->
+
+  <!--avisando angular para triggar o switch de rotas-->
+  <router-outlet></router-outlet>
 </div>
